@@ -3,6 +3,8 @@ import { Montserrat } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
+import { Suspense } from "react";
+import Loading from "./loading";
 const inter = Montserrat({ 
   subsets: ["latin"],
   weight:["100","300","400","500","600","700","900"],
@@ -19,7 +21,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className='dark'>
       <body className={inter.className}>
         <AntdRegistry>
-        {children}
+          <Suspense fallback={<Loading />} >
+          {children}
+          </Suspense>
+       
         </AntdRegistry>
         </body>
     </html>

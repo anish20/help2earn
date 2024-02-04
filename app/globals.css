@@ -1,6 +1,6 @@
 :root {
   
-  --backgroundColor:blue;
+  --backgroundColor:#00B0FB;
   --H1FontSize:34px;
   --H2FontSize:26px;
 }
@@ -60,3 +60,9 @@ a {
   font-family: var(--globalFont);
 }
 
+.ant-input::placeholder{
+  color:#fff !important
+}
+.anticon{
+  color:#fff !important
+}

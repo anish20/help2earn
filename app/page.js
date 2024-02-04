@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import AuthScreen from "./components/Auth/Home";
 // import styles from "./page.module.css";
@@ -5,7 +6,7 @@ import AuthScreen from "./components/Auth/Home";
 export default function Home() {
   return (
     <main>
-       <AuthScreen />
+       <AuthScreen  />
     </main>
   );
 }

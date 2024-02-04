@@ -66,3 +66,13 @@ a {
 .anticon{
   color:#fff !important
 }
+.ant-input-outlined{
+  background-color: transparent !important;
+  border: none !important;
+  color: #fff !important;
+}
+.ant-input-group-addon{
+  background: transparent !important;
+  border: none !important;
+  color: #fff !important;
+}

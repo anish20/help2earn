@@ -20,7 +20,13 @@ const Register = () => {
             <Grid className={styles.FormContainwr}>
                 <Row className={styles.SpaceColumn1}>
                     <Col sm={12} md={12} lg={12} xl={12} style={{width:"100%"}}>
-                        <Input  autoComplete={"off"} className={styles.Input} placeholder='Mobile No.' />
+                        <Input  
+                        onKeyPress={(event) => {
+                            if (!/[0-9]/.test(event.key)) {
+                                event.preventDefault();
+                            }
+                        }}
+                        autoComplete={"off"} className={styles.Input} placeholder='Mobile No.' />
                     </Col>
                   
                 </Row>
